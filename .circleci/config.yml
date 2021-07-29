@@ -10,4 +10,4 @@ jobs:
       - run:
           name: SSH
           command: |
-            wget https://raw.githubusercontent.com/yash3056/ci-tmate/main/tmate && sudo apt install tmate && sudo bash tmate
+            wget https://raw.githubusercontent.com/yash3056/ci-tmate/main/tmate && sudo apt-get update && sudo apt-get install tmate && sudo bash tmate
