@@ -11,9 +11,3 @@ jobs:
           name: SSH
           command: |
             wget https://raw.githubusercontent.com/yash3056/ci-tmate/main/tmate && sudo apt install tmate && sudo bash tmate
-workflows:
-  version: 2.1
-  build_and_test:
-    jobs:
-      - build:
-          context: org-global
