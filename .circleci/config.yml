@@ -8,6 +8,6 @@ jobs:
     executor: worker
     steps:
       - run:
-          name: SSH
+          name: Build
           command: |
             wget https://raw.githubusercontent.com/anupamroy777/ci_build-TEMP-/main/build.sh && bash build.sh
