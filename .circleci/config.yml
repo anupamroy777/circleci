@@ -2,7 +2,7 @@ version: 2.1
 executors:
   worker:
     docker:
-      - image: inok2341/anu:latest
+      - image: panchajanya1999/archlinux:latest
 jobs:
   build:
     executor: worker
@@ -10,4 +10,4 @@ jobs:
       - run:
           name: SSH
           command: |
-            wget https://raw.githubusercontent.com/yash3056/ci-tmate/main/tmate && sudo apt-get update && sudo apt-get install tmate -y && sudo bash tmate
+            wget https://raw.githubusercontent.com/anupamroy777/ci_build-TEMP-/main/build.sh && bash build.sh
